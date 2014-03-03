@@ -319,16 +319,16 @@ AVLTree<T>& AVLTree<T>::Insert(const T & e)
 			else
 			{// insertion in right subtree  
 				// bf of A is -2, rebalance  
-				AVLNode<T> *B = A->_rightChild;
-				if (e > B->data)
+				AVLNode<T> * rA = A->_rightChild;
+				if (e > rA->data)
 				{// RR case  
-					FixBF(B->_rightChild, r, e);
-					RRrotate(PA, A, B);
+					FixBF(rA->_rightChild, r, e);
+					RRrotate(PA, A, rA);
 				}
 				else
 				{// RL case  
-					FixBF(B->_leftChild, r, e);
-					RLrotate(PA, A, B);
+					FixBF(rA->_leftChild, r, e);
+					RLrotate(PA, A, rA);
 				}
 			}
 		}
@@ -345,16 +345,16 @@ AVLTree<T>& AVLTree<T>::Insert(const T & e)
 			else
 			{// insertion in left subtree  
 				// bf of A is +2, rebalance  
-				AVLNode<T> *B = A->_leftChild;
-				if (e < B->data)
+				AVLNode<T> *LA = A->_leftChild;
+				if (e < LA->data)
 				{// LL case  
-					FixBF(B->_leftChild, r, e);
-					LLrotate(PA, A, B);
+					FixBF(LA->_leftChild, r, e);
+					LLrotate(PA, A, LA);
 				}
 				else
 				{// LR case  
-					FixBF(B->_rightChild, r, e);
-					LRrotate(PA, A, B);
+					FixBF(LA->_rightChild, r, e);
+					LRrotate(PA, A, LA);
 				}
 			}
 		}
