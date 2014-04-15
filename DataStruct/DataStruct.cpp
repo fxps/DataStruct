@@ -7,12 +7,15 @@
 
 #include "Stack/LinearStack.h"
 
-#include "BinaryTree.h"
+#include "Tree/BinaryTree.h"
+
 #include "stdlib.h"
 #include "Stack.h"
 #include "Queue.h"
-#include "BinarySearchTree.h"
-#include "AVLTree.h"
+
+#include "SortUtil/SortUitl.h"
+
+
 #include "assert.h"
 #include <iostream>
 using namespace std;
@@ -47,17 +50,27 @@ int _tmain(int argc, _TCHAR* argv[])
 // 	list->Output();
 // 	delete list;
 
-	LinearStack<int>* stack = new LinearStack<int>;
+// 	LinearStack<int>* stack = new LinearStack<int>;
+// 
+// 	for (int i = 0; i < 10; i++)
+// 	{
+// 		stack->Push(i);
+// 	}
+// 	stack->Pop();
+// 	stack->Push(99);
+// 	stack->OutPut();
+// 
+// 	delete stack;
 
-	for (int i = 0; i < 10; i++)
-	{
-		stack->Push(i);
-	}
-	stack->Pop();
-	stack->Push(99);
-	stack->OutPut();
+// 	BinaryTree<int> a, b, x, y, z;
+// 	y.MakeTree(1, a, b);
+// 	z.MakeTree(2, a, b);
+// 	x.MakeTree(3, y, z);
+// 	x.InOrder(Visit);
 
-	delete stack;
+	int a[10] = { 8, 7, 5, 2, 3, 6, 9, 4,0, 1 };
+	//SortUtil::BubbleSort0(a, 10);
+	SortUtil::SelectSort(a, 10);
 	return 0;
 }
 

@@ -16,6 +16,15 @@
     <Filter Include="头文件\Stack">
       <UniqueIdentifier>{e42de904-944f-44f7-b24a-0c6b96cb6a00}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\Tree">
+      <UniqueIdentifier>{cf418dce-ac6d-484e-9be9-d02cca10db60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DynamicSet">
+      <UniqueIdentifier>{7f5e635b-3d57-41e9-9b81-d0ea0a374be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\SortUtil">
+      <UniqueIdentifier>{854eceb6-e70c-4e97-ae9f-feecc0d75861}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -36,15 +45,6 @@
     <ClInclude Include="Queue.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="BinaryTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BinarySearchTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="AVLTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="LinearList.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -56,6 +56,15 @@
     </ClInclude>
     <ClInclude Include="Stack\LinearStack.h">
       <Filter>头文件\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="Tree\BinaryTree.h">
+      <Filter>头文件\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DynmaicSet\DynamicSet.h">
+      <Filter>头文件\DynamicSet</Filter>
+    </ClInclude>
+    <ClInclude Include="SortUtil\SortUitl.h">
+      <Filter>头文件\SortUtil</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
