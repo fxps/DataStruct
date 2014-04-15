@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\Stack">
+      <UniqueIdentifier>{e42de904-944f-44f7-b24a-0c6b96cb6a00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -47,6 +50,12 @@
     </ClInclude>
     <ClInclude Include="HeaderList.h">
       <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack\Stack.h">
+      <Filter>头文件\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack\LinearStack.h">
+      <Filter>头文件\Stack</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

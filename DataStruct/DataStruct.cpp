@@ -3,7 +3,10 @@
 
 #include "stdafx.h"
 //#include "SingleList.h"
-#include "HeaderList.h"
+//#include "HeaderList.h"
+
+#include "Stack/LinearStack.h"
+
 #include "BinaryTree.h"
 #include "stdlib.h"
 #include "Stack.h"
@@ -26,23 +29,35 @@ int _tmain(int argc, _TCHAR* argv[])
 // 	list->Output();
 // 	delete list;
 
-	HeaderList<int>* list = new HeaderList<int>;
+// 	HeaderList<int>* list = new HeaderList<int>;
+// 	for (int i = 0; i < 10; i++)
+//  	{
+//  		list->Insert(i, i);
+//  	}
+// 	list->Length();
+// 	list->Output();
+// 	int a = 0;
+// 	list->Find(9, a);
+// 	list->Search(0);
+// 	list->Delete(9);
+// 	list->Output();
+// 	list->Length();
+// 	list->Search(9);
+// 	list->Update(8, 9);
+// 	list->Output();
+// 	delete list;
+
+	LinearStack<int>* stack = new LinearStack<int>;
+
 	for (int i = 0; i < 10; i++)
- 	{
- 		list->Insert(i, i);
- 	}
-	list->Length();
-	list->Output();
-	int a = 0;
-	list->Find(9, a);
-	list->Search(0);
-	list->Delete(9);
-	list->Output();
-	list->Length();
-	list->Search(9);
-	list->Update(8, 9);
-	list->Output();
-	delete list;
+	{
+		stack->Push(i);
+	}
+	stack->Pop();
+	stack->Push(99);
+	stack->OutPut();
+
+	delete stack;
 	return 0;
 }
 
