@@ -80,6 +80,7 @@
     <ClInclude Include="AVLTree.h" />
     <ClInclude Include="BinarySearchTree.h" />
     <ClInclude Include="BinaryTree.h" />
+    <ClInclude Include="HeaderList.h" />
     <ClInclude Include="LinearList.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="SingleList.h" />
